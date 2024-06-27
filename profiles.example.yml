@@ -1,0 +1,11 @@
+databricks_dbt_etl:
+  outputs:
+    dev:
+      catalog: dbx
+      host: adb-################.azuredatabricks.net
+      http_path: sql/protocolv1/o/###################
+      schema: ph # ph schema prefix for schemas on dbt_project.yml
+      threads: 4
+      token: "dapi#############################"
+      type: databricks
+  target: dev
