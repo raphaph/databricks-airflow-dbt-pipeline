@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+  - name: ph_health
+    tables:
+      - name: breast_cancer
+        description: about cancer metrics

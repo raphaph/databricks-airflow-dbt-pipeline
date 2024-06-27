@@ -1,0 +1,12 @@
+# Este arquivo fica armazenado fora do repositório em C:\User\<user name>\.dbt\profiles.yml
+databricks_dbt_etl:
+  outputs:
+    dev:
+      catalog: dbw-dev
+      host: adb-###################.azuredatabricks.net
+      http_path: sql/protocolv1/o/#########################
+      schema: ph # prefixo do schema conforme definido nome no dbt_project.yml
+      threads: 4
+      token: "dapi########################"
+      type: databricks
+  target: dev

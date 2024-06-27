@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: tru_health
+    schema: ph_tru_health
+    description: test
+    columns:
+      - name: id
+        data_type: bigint
+        description: código unico
+        tags: [id]
+        quote: false
+        tests:
+          - not_null
