@@ -6,7 +6,7 @@ dbt_path = "cd /home/mantis/airflow-dbt/databricks-dbt-etl/"
 
 with DAG('dag_health_stage', 
          description="health_stage",
-         schedule_interval="@daily",
+         schedule_interval=None,
          start_date=datetime(2024,6,25),
          catchup=False,
          tags=["stage","health"]) as dag:
