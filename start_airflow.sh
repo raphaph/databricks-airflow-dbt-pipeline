@@ -4,5 +4,5 @@
 airflow webserver &
 sleep 5
 airflow scheduler &
-airflow flower &
+airflow celery flower &
 airflow celery worker
